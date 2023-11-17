@@ -4,7 +4,9 @@
 <div class="cards">
   <% @bookmarks.each do |bookmark| %>
     <div class="card-category">
-      <div class="movie-img"><%= image_tag bookmark.movie.poster_url, alt: bookmark.movie.title, width: 200 %></div>
+      <div class="movie-img">
+        <%= image_tag bookmark.movie.poster_url, alt: bookmark.movie.title, width: 200 %>
+      </div>
       <div class="infos">
         <%= bookmark.movie.title %>
         <div class="overview">
