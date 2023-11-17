@@ -1,0 +1,26 @@
+<h1>Ce soir, j'ai vraiment envie de pleurer et de 🍷</h1>
+<h3><%= @list.name %></h3>
+
+<div class="cards">
+  <% @bookmarks.each do |bookmark| %>
+    <div class="card-category">
+      <div class="movie-img"><%= image_tag bookmark.movie.poster_url, alt: bookmark.movie.title, width: 200 %></div>
+      <div class="infos">
+        <%= bookmark.movie.title %>
+        <div class="overview">
+          <%= bookmark.movie.overview %>
+        </div>
+        <p class = 'infos'>Note: <%= bookmark.movie.rating %>/10</p>
+        <%= bookmark.comment %>
+        <%= link_to bookmark_path(bookmark), method: :destroy, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+          <i class="fa-solid fa-trash"></i>
+      </div>
+     <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+<%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+
+<%= link_to "Back to home", lists_path%>

@@ -1,0 +1,18 @@
+<div class="ban" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://questions.aleteia.org/wp-content/uploads/aleteia/articles/cover/63.jpg)">
+  Exercice de l'enfer 😈
+</div>
+
+<div class="card-product">
+  <% @lists.each do |list| %>
+    <div class="card-product-infos">
+  <%# <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" /> %>
+    <h2><%= link_to list.name, list_path(list)%></h2>
+        </div>
+        <%= link_to list_path(list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+          <i class="fa-solid fa-trash"></i>
+        <% end %>
+
+  <% end %>
+</div>
+
+<%= link_to "New list", new_list_path %>
