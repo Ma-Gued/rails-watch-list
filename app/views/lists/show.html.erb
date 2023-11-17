@@ -11,7 +11,7 @@
           <%= bookmark.movie.overview %>
         </div>
         <p class = 'infos'>Note: <%= bookmark.movie.rating %>/10</p>
-        <%# <%= bookmark.comment %> 
+        <%# <%= bookmark.comment %>
         <%= link_to bookmark_path(bookmark), method: :destroy, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
           <i class="fa-solid fa-trash"></i>
       </div>
@@ -20,7 +20,7 @@
     <% end %>
 </div>
 
-
+<div class="buttons">
 <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
-
 <%= link_to "Back to home", lists_path%>
+</div>
