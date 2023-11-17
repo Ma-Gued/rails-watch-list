@@ -11,13 +11,13 @@
           <%= bookmark.movie.overview %>
         </div>
         <p class = 'infos'>Note: <%= bookmark.movie.rating %>/10</p>
-        <%= bookmark.comment %>
+        <%# <%= bookmark.comment %> 
         <%= link_to bookmark_path(bookmark), method: :destroy, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
           <i class="fa-solid fa-trash"></i>
       </div>
      <% end %>
-    <% end %>
   </div>
+    <% end %>
 </div>
 
 
