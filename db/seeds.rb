@@ -18,8 +18,3 @@ Movie.create(title: "Oppenheimer", overview: "Christopher Nolan's cinematic expl
 Movie.create(title: "Forrest Gump", overview: "Heartfelt portrayal of Forrest Gump, an unwittingly influential man whose life intertwines with major historical events", poster_url: "https://fr.web.img4.acsta.net/pictures/15/10/13/15/12/514297.jpg", rating: 8.6)
 Movie.create(title: "Shutter Island", overview: "Martin Scorsese's psychological thriller starring Leonardo DiCaprio, unraveling a gripping mystery set on a remote asylum island, blurring reality and illusion in haunting ways.", poster_url: "https://fr.web.img4.acsta.net/medias/nmedia/18/69/96/84/19151192.jpg", rating: 7.9)
 Movie.create(title: "Hunger Games", overview: "Gary Ross's adaptation of Suzanne Collins' dystopian novel, following Katniss Everdeen's journey in a televised fight-to-the-death tournament set in a post-apocalyptic world.", poster_url: "https://fr.web.img5.acsta.net/medias/nmedia/18/85/51/91/20018884.jpg", rating: 9.1)
-
-
-List.create(name: "List 1")
-List.create(name: "List 2")
-List.create(name: "List 3")
